@@ -65,7 +65,7 @@ class _DetailPageState extends State<DetailPage> {
         appBar: AppBar(
           centerTitle: true,
           title: Text(
-            "Details",
+            'details'.tr,
             style: TextStyle(
                 color: Colors.green.shade600, fontFamily: 'Nexa', fontSize: 30),
           ),
@@ -152,7 +152,7 @@ class _DetailPageState extends State<DetailPage> {
                                 Row(
                                   children: [
                                     Text(
-                                      "Author: ",
+                                      'author'.tr,
                                       style: TextStyle(
                                           color: Colors.green.shade600,
                                           fontFamily: 'Nexa',
@@ -174,7 +174,7 @@ class _DetailPageState extends State<DetailPage> {
                                 Row(
                                   children: [
                                     Text(
-                                      "Subject: ",
+                                      'subject'.tr,
                                       style: TextStyle(
                                           color: Colors.green.shade600,
                                           fontFamily: 'Nexa',
@@ -237,7 +237,7 @@ class _DetailPageState extends State<DetailPage> {
                                           height: 3,
                                         ),
                                         Text(
-                                          "Save",
+                                          'save'.tr,
                                           style: TextStyle(
                                               color: Colors.green.shade700,
                                               fontFamily: 'Nexa',
@@ -291,7 +291,7 @@ class _DetailPageState extends State<DetailPage> {
                                             );
                                           },
                                         ),
-                                        Text("Read",
+                                        Text('read'.tr,
                                             style: TextStyle(
                                                 color: Colors.green.shade700,
                                                 fontFamily: 'Nexa',
@@ -309,8 +309,8 @@ class _DetailPageState extends State<DetailPage> {
                 SizedBox(
                   height: MediaQuery.of(context).size.height * 0.04,
                 ),
-                const Text(
-                  "Do you want to book this book?",
+                Text(
+                  'detail phrase'.tr,
                   style: TextStyle(
                       color: Colors.white, fontFamily: 'Nexa', fontSize: 30),
                 ),
@@ -356,7 +356,7 @@ class _DetailPageState extends State<DetailPage> {
                                     BorderRadius.all(Radius.circular(10)),
                                 borderSide: BorderSide(
                                     width: 3, color: Colors.green.shade600)),
-                            labelText: "Name",
+                            labelText: 'name'.tr,
                             labelStyle: TextStyle(color: Colors.green.shade600),
                             border: const OutlineInputBorder(),
                           ),
@@ -420,7 +420,7 @@ class _DetailPageState extends State<DetailPage> {
                         height: MediaQuery.of(context).size.height * 0.02,
                       ),*/
                       SizedBox(
-                        width: MediaQuery.of(context).size.width * 0.33,
+                        width: MediaQuery.of(context).size.width * 0.41,
                         height: MediaQuery.of(context).size.height * 0.05,
                         child: ElevatedButton(
                             style: ButtonStyle(
@@ -439,12 +439,12 @@ class _DetailPageState extends State<DetailPage> {
                                   snackPosition: SnackPosition.BOTTOM,
                                   animationDuration:
                                       Duration(milliseconds: 2000),
-                                  "You Booked A Book!",
-                                  "Check Your Profile To See The Books You Have Booked, Also Go To The Library To Take The Book!");
+                                  'message titleDP'.tr,
+                                  'messageDP'.tr);
                               Get.to(() => NavBar());
                             }),
-                            child: const Text(
-                              "Book It!",
+                            child: Text(
+                              'book it'.tr,
                               style:
                                   TextStyle(fontSize: 25, fontFamily: 'Nexa'),
                             )),

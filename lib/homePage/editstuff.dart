@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:homeworkk/controllers/signupCont.dart';
-import 'package:homeworkk/examples_of_what_im_finna_work_with/textf.dart';
+import 'package:homeworkk/controllers/textf.dart';
 import 'package:homeworkk/homePage/profile.dart';
+import 'package:homeworkk/navbar.dart';
 
 class EditInfo extends StatefulWidget {
   @override
@@ -24,7 +25,7 @@ class _EditInfoState extends State<EditInfo> {
         centerTitle: true,
         backgroundColor: Colors.green.shade600,
         title: Text(
-          'Edit Your Info',
+          'edit your info'.tr,
           style:
               TextStyle(fontFamily: 'Nexa', fontSize: 30, color: Colors.white),
         ),
@@ -58,14 +59,14 @@ class _EditInfoState extends State<EditInfo> {
                       Txtfield(
                         controller: signupController.username,
                         obscureText: false,
-                        labelText: 'Username',
+                        labelText: 'username'.tr,
                       ),
                       SizedBox(
                           height: MediaQuery.of(context).size.height * 0.03),
                       Txtfield(
                         controller: signupController.name,
                         obscureText: false,
-                        labelText: 'Name',
+                        labelText: 'name'.tr,
                       ),
                       SizedBox(
                           height: MediaQuery.of(context).size.height * 0.03),
@@ -79,28 +80,14 @@ class _EditInfoState extends State<EditInfo> {
                       Txtfield(
                         controller: signupController.telNum,
                         obscureText: false,
-                        labelText: 'Phone number',
+                        labelText: 'phone number'.tr,
                       ),
                       SizedBox(
                           height: MediaQuery.of(context).size.height * 0.03),
                       Txtfield(
                         controller: signupController.idNum,
                         obscureText: false,
-                        labelText: 'ID Card number',
-                      ),
-                      SizedBox(
-                          height: MediaQuery.of(context).size.height * 0.03),
-                      Txtfield(
-                        controller: signupController.pass,
-                        obscureText: true,
-                        labelText: 'Put in astrong password',
-                      ),
-                      SizedBox(
-                          height: MediaQuery.of(context).size.height * 0.03),
-                      Txtfield(
-                        controller: signupController.confPass,
-                        obscureText: true,
-                        labelText: 'Re-write the password',
+                        labelText: 'CIN',
                       ),
                       SizedBox(
                           height: MediaQuery.of(context).size.height * 0.03),
@@ -109,14 +96,13 @@ class _EditInfoState extends State<EditInfo> {
                         width: MediaQuery.of(context).size.width * 0.4,
                         child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                                backgroundColor: Colors.blue.shade800),
+                                backgroundColor: Colors.green.shade600),
                             onPressed: () {
                               if (signupController.email.text.isEmpty ||
                                   signupController.username.text.isEmpty ||
                                   signupController.name.text.isEmpty ||
                                   signupController.idNum.text.isEmpty ||
-                                  signupController.telNum.text.isEmpty ||
-                                  signupController.pass.text.isEmpty) {
+                                  signupController.telNum.text.isEmpty) {
                                 Get.snackbar("hey there",
                                     "You left some fields are empty!",
                                     snackPosition: SnackPosition.BOTTOM);
@@ -129,20 +115,15 @@ class _EditInfoState extends State<EditInfo> {
                                 Get.snackbar("hey there",
                                     "check if you put the correct id number or phone number!",
                                     snackPosition: SnackPosition.BOTTOM);
-                              } else if (signupController.pass.text !=
-                                  signupController.confPass.text) {
-                                Get.snackbar(
-                                    "hey there", "The passwords Don't match!",
-                                    snackPosition: SnackPosition.BOTTOM);
                               } else {
-                                Get.to(Profile());
+                                Get.to(NavBar());
                               }
                             },
                             child: Text(
-                              "Sign IN!",
+                              "Done!",
                               style: TextStyle(
                                   fontFamily: 'Nexa',
-                                  fontSize: 17,
+                                  fontSize: 24,
                                   color: Colors.white),
                             )),
                       )

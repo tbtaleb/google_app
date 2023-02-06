@@ -48,7 +48,7 @@ class _ProfileState extends State<Profile> {
           centerTitle: true,
           backgroundColor: Colors.white,
           title: Text(
-            'Your Profile',
+            'your profile'.tr,
             style: TextStyle(
                 fontFamily: 'Nexa',
                 fontSize: 30,
@@ -121,7 +121,7 @@ class _ProfileState extends State<Profile> {
                               Row(
                                 children: [
                                   Text(
-                                    "Name:  ",
+                                    "${'name'.tr}: ",
                                     style: TextStyle(
                                         fontFamily: 'Nexa',
                                         fontSize: 20,
@@ -187,7 +187,7 @@ class _ProfileState extends State<Profile> {
                               Row(
                                 children: [
                                   Text(
-                                    "Phone Number:  ",
+                                    "${'phone number'.tr}: ",
                                     style: TextStyle(
                                         fontFamily: 'Nexa',
                                         fontSize: 20,
@@ -238,7 +238,7 @@ class _ProfileState extends State<Profile> {
                       },
                       child: Text(
                         textAlign: TextAlign.right,
-                        "Edit",
+                        'edit'.tr,
                         style: TextStyle(
                             fontFamily: 'Nexa',
                             fontSize: 20,
@@ -296,7 +296,7 @@ class _ProfileState extends State<Profile> {
                                     size: 30,
                                   ),
                                   Text(
-                                    "Saved",
+                                    'saved'.tr,
                                     style: TextStyle(
                                       fontFamily: 'Nexa',
                                       fontSize: 20,
@@ -307,10 +307,6 @@ class _ProfileState extends State<Profile> {
                                   ),
                                 ],
                               )),
-                          VerticalDivider(
-                            thickness: 5,
-                            color: Colors.yellow.shade200,
-                          ),
                           ElevatedButton(
                               onPressed: (() =>
                                   setState(() => button_test2 = !button_test2)),
@@ -334,7 +330,7 @@ class _ProfileState extends State<Profile> {
                                     size: 30,
                                   ),
                                   Text(
-                                    "Read",
+                                    'read'.tr,
                                     style: TextStyle(
                                       fontFamily: 'Nexa',
                                       fontSize: 20,
@@ -345,10 +341,6 @@ class _ProfileState extends State<Profile> {
                                   ),
                                 ],
                               )),
-                          VerticalDivider(
-                            thickness: 5,
-                            color: Colors.yellow.shade200,
-                          ),
                           ElevatedButton(
                               onPressed: (() =>
                                   setState(() => button_test3 = !button_test3)),
@@ -372,7 +364,7 @@ class _ProfileState extends State<Profile> {
                                     size: 30,
                                   ),
                                   Text(
-                                    "History",
+                                    'history'.tr,
                                     style: TextStyle(
                                       fontFamily: 'Nexa',
                                       fontSize: 20,
@@ -426,7 +418,7 @@ class _ProfileState extends State<Profile> {
                                             MainAxisAlignment.center,
                                         children: [
                                           const Icon(Icons.check_rounded),
-                                          Text("read",
+                                          Text('read'.tr,
                                               style: TextStyle(
                                                   color: Colors.grey.shade600,
                                                   fontFamily: 'Nexa',

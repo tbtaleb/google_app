@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:get/get.dart';
 
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:homeworkk/homePage/home.dart';
@@ -76,11 +77,11 @@ class _NavBarState extends State<NavBar> {
                 ),
                 GButton(
                   icon: CupertinoIcons.square_grid_2x2,
-                  text: "Home",
+                  text: 'home'.tr,
                 ),
                 GButton(
                   icon: CupertinoIcons.ellipsis_circle,
-                  text: "Settings",
+                  text: 'settings'.tr,
                 ),
               ]),
         ),

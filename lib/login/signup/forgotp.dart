@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:homeworkk/examples_of_what_im_finna_work_with/textf.dart';
+import 'package:homeworkk/controllers/textf.dart';
 import 'package:homeworkk/login/signup/fpage.dart';
 import 'package:homeworkk/login/signup/login.dart';
 
@@ -51,8 +51,7 @@ class ForgotPass extends StatelessWidget {
                         child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Text(
-                                  "Enter your email to send the confirmation to change the password",
+                              Text('messagefp'.tr,
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                     color: Colors.blue.shade800,
@@ -65,7 +64,7 @@ class ForgotPass extends StatelessWidget {
                               ),
                               Txtfield(
                                   controller: email,
-                                  labelText: "type in your e-mail",
+                                  labelText: 'firstbracket'.tr,
                                   obscureText: false),
                               SizedBox(
                                 height:
@@ -73,7 +72,7 @@ class ForgotPass extends StatelessWidget {
                               ),
                               Txtfield(
                                   controller: confEmail,
-                                  labelText: "confirm your e-mail",
+                                  labelText: 'secondbracket'.tr,
                                   obscureText: false),
                               SizedBox(
                                 height:
@@ -98,7 +97,8 @@ class ForgotPass extends StatelessWidget {
                                       }
                                     },
                                     child: Text(
-                                      "Send Confirmation !",
+                                      'send confirmation'.tr,
+                                      textAlign: TextAlign.center,
                                       style: TextStyle(
                                           fontFamily: 'Nexa',
                                           fontSize: 16,

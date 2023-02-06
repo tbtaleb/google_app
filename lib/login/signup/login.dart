@@ -3,7 +3,7 @@ import 'package:homeworkk/controllers/signupCont.dart';
 import 'package:homeworkk/homePage/home.dart';
 import 'package:homeworkk/login/signup/forgotp.dart';
 import 'package:get/get.dart';
-import 'package:homeworkk/examples_of_what_im_finna_work_with/textf.dart';
+import 'package:homeworkk/controllers/textf.dart';
 import 'package:homeworkk/login/signup/fpage.dart';
 import 'package:homeworkk/login/signup/signup.dart';
 import 'package:homeworkk/navbar.dart';
@@ -58,8 +58,8 @@ class Login extends StatelessWidget {
                       height: MediaQuery.of(context).size.height * 0.5,
                       child: Column(
                         children: [
-                          const Text(
-                            "Log In",
+                          Text(
+                            'log in'.tr,
                             style: TextStyle(
                               color: Colors.red,
                               fontFamily: 'product',
@@ -73,7 +73,7 @@ class Login extends StatelessWidget {
                           Txtfield(
                             controller: loginController.username,
                             obscureText: false,
-                            labelText: 'username',
+                            labelText: 'username'.tr,
                           ),
                           SizedBox(
                             height: MediaQuery.of(context).size.height * 0.01,
@@ -81,7 +81,7 @@ class Login extends StatelessWidget {
                           Txtfield(
                             controller: loginController.pass,
                             obscureText: true,
-                            labelText: 'password',
+                            labelText: 'password'.tr,
                           ),
                           SizedBox(
                             height: MediaQuery.of(context).size.height * 0.01,
@@ -90,9 +90,9 @@ class Login extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
                               InkWell(
-                                child: const Text(
+                                child: Text(
                                   textAlign: TextAlign.right,
-                                  "forgot password.",
+                                  'forgot password'.tr,
                                   style: TextStyle(
                                       fontFamily: 'Nexa',
                                       color: Color.fromARGB(255, 0, 65, 119)),
@@ -107,7 +107,7 @@ class Login extends StatelessWidget {
                             height: MediaQuery.of(context).size.height * 0.02,
                           ),
                           SizedBox(
-                            width: MediaQuery.of(context).size.width * 0.3,
+                            width: MediaQuery.of(context).size.width * 0.335,
                             height: MediaQuery.of(context).size.height * 0.05,
                             child: ElevatedButton(
                                 onPressed: () {
@@ -117,8 +117,8 @@ class Login extends StatelessWidget {
                                     Get.to(() => NavBar());
                                   }
                                 },
-                                child: const Text(
-                                  "confirm",
+                                child: Text(
+                                  'confirm'.tr,
                                   style: TextStyle(
                                       fontFamily: 'Nexa', fontSize: 25),
                                 )),
@@ -130,9 +130,9 @@ class Login extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               InkWell(
-                                child: const Text(
+                                child: Text(
                                   textAlign: TextAlign.right,
-                                  "Don't have an account?",
+                                  'dont have an account'.tr,
                                   style: TextStyle(
                                       fontFamily: 'Nexa', color: Colors.blue),
                                 ),

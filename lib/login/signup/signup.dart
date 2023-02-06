@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:homeworkk/controllers/signupCont.dart';
-import 'package:homeworkk/examples_of_what_im_finna_work_with/textf.dart';
+import 'package:homeworkk/controllers/textf.dart';
 import 'package:homeworkk/login/signup/fpage.dart';
 import 'package:homeworkk/homePage/profile.dart';
 import 'package:homeworkk/navbar.dart';
@@ -42,9 +42,9 @@ class Signup extends StatelessWidget {
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
+                children: [
                   Text(
-                    "Set Up Your New Account!!",
+                    'signup title'.tr,
                     style: TextStyle(
                       color: Colors.blue,
                       fontFamily: 'Nexa',
@@ -72,49 +72,49 @@ class Signup extends StatelessWidget {
                         Txtfield(
                           controller: signupController.username,
                           obscureText: false,
-                          labelText: 'Enter a unique username',
+                          labelText: 'userph'.tr,
                         ),
                         SizedBox(
                             height: MediaQuery.of(context).size.height * 0.03),
                         Txtfield(
                           controller: signupController.name,
                           obscureText: false,
-                          labelText: 'Now put in your full name',
+                          labelText: 'nameph'.tr,
                         ),
                         SizedBox(
                             height: MediaQuery.of(context).size.height * 0.03),
                         Txtfield(
                           controller: signupController.email,
                           obscureText: false,
-                          labelText: 'type in your e-mail',
+                          labelText: 'emailph'.tr,
                         ),
                         SizedBox(
                             height: MediaQuery.of(context).size.height * 0.03),
                         Txtfield(
                           controller: signupController.telNum,
                           obscureText: false,
-                          labelText: 'Phone number',
+                          labelText: 'phone number'.tr,
                         ),
                         SizedBox(
                             height: MediaQuery.of(context).size.height * 0.03),
                         Txtfield(
                           controller: signupController.idNum,
                           obscureText: false,
-                          labelText: 'ID Card number',
+                          labelText: 'idph'.tr,
                         ),
                         SizedBox(
                             height: MediaQuery.of(context).size.height * 0.03),
                         Txtfield(
                           controller: signupController.pass,
                           obscureText: true,
-                          labelText: 'Put in astrong password',
+                          labelText: 'pwph'.tr,
                         ),
                         SizedBox(
                             height: MediaQuery.of(context).size.height * 0.03),
                         Txtfield(
                           controller: signupController.confPass,
                           obscureText: true,
-                          labelText: 'Re-write the password',
+                          labelText: 'pw2ph'.tr,
                         ),
                         SizedBox(
                             height: MediaQuery.of(context).size.height * 0.03),
@@ -154,7 +154,7 @@ class Signup extends StatelessWidget {
                                 }
                               },
                               child: Text(
-                                "Sign IN!",
+                                'sign in'.tr,
                                 style: TextStyle(
                                     fontFamily: 'Nexa',
                                     fontSize: 17,

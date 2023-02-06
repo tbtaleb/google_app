@@ -87,8 +87,8 @@ class _HomeState extends State<Home> {
                   bottomLeft: Radius.circular(25))),
           centerTitle: true,
           backgroundColor: Colors.white,
-          title: const Text(
-            'Home',
+          title: Text(
+            'home'.tr,
             style: TextStyle(
                 fontFamily: 'Nexa', color: Color(0XFF1E88E5), fontSize: 30),
           ),
@@ -102,7 +102,7 @@ class _HomeState extends State<Home> {
                 height: MediaQuery.of(context).size.height * 0.05,
               ),
               Text(
-                "Welcome!!",
+                'welcome'.tr,
                 style: TextStyle(
                   color: Colors.white,
                   fontFamily: 'Nexa',
@@ -115,8 +115,8 @@ class _HomeState extends State<Home> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Text(
-                    "What are you looking for to read ",
+                  Text(
+                    'welcome phrase'.tr,
                     style: TextStyle(
                         color: Colors.white, fontFamily: 'Nexa', fontSize: 18),
                   ),
@@ -233,7 +233,7 @@ class _HomeState extends State<Home> {
                                             color: Colors.grey.shade600,
                                             size: 34,
                                           ),
-                                          Text("read?",
+                                          Text('read'.tr,
                                               style: TextStyle(
                                                   color: Colors.grey.shade600,
                                                   fontFamily: 'Nexa',

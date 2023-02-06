@@ -33,8 +33,9 @@ class Fpage extends StatelessWidget {
               SizedBox(
                 height: MediaQuery.of(context).size.height * 0.1,
               ),
-              const Text(
-                "A Better Way For",
+              Text(
+                'title1'.tr,
+                textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Colors.green,
                   fontFamily: 'Nexa',
@@ -42,8 +43,9 @@ class Fpage extends StatelessWidget {
                   fontSize: 57,
                 ),
               ),
-              const Text(
-                "Booking A Book",
+              Text(
+                'title2'.tr,
+                textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Colors.green,
                   fontFamily: 'Nexa',
@@ -54,8 +56,8 @@ class Fpage extends StatelessWidget {
               SizedBox(
                 height: MediaQuery.of(context).size.height * 0.1,
               ),
-              const Text(
-                "\"let's start by making an account\"",
+              Text(
+                'signup phrase'.tr,
                 style: TextStyle(
                   color: Colors.blue,
                   fontFamily: 'product',
@@ -71,16 +73,16 @@ class Fpage extends StatelessWidget {
                 height: MediaQuery.of(context).size.height * 0.05,
                 child: ElevatedButton(
                     onPressed: (() {
-                      Get.to(() =>Signup());
+                      Get.to(() => Signup());
                     }),
-                    child: const Text(
-                      "Sign Up",
+                    child: Text(
+                      'signup'.tr,
                       style: TextStyle(fontSize: 25, fontFamily: 'Nexa'),
                     )),
               ),
               SizedBox(height: MediaQuery.of(context).size.height * 0.03),
-              const Text(
-                "\"OR\"",
+              Text(
+                'or'.tr,
                 style: TextStyle(
                   color: Colors.blue,
                   fontFamily: 'product',
@@ -91,7 +93,7 @@ class Fpage extends StatelessWidget {
                 height: MediaQuery.of(context).size.height * 0.03,
               ),
               SizedBox(
-                width: MediaQuery.of(context).size.width * 0.33,
+                width: MediaQuery.of(context).size.width * 0.36,
                 height: MediaQuery.of(context).size.height * 0.05,
                 child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
@@ -99,17 +101,17 @@ class Fpage extends StatelessWidget {
                         backgroundColor: Colors.transparent,
                         side: BorderSide(width: 3.0, color: Colors.blue)),
                     onPressed: (() {
-                      Get.to(() =>Login());
+                      Get.to(() => Login());
                     }),
-                    child: const Text(
-                      "Log In",
+                    child: Text(
+                      'log in'.tr,
                       style: TextStyle(
                           color: Colors.blue, fontSize: 25, fontFamily: 'Nexa'),
                     )),
               ),
               SizedBox(height: MediaQuery.of(context).size.height * 0.03),
-              const Text(
-                "\"simply log in if you already have an account\"",
+              Text(
+                'log in phrase'.tr,
                 style: TextStyle(
                   color: Colors.blue,
                   fontFamily: 'product',
