@@ -55,7 +55,7 @@ class Signup extends StatelessWidget {
               ),
               Row(
                 children: [
-                  SizedBox(height: MediaQuery.of(context).size.height * 0.03),
+                  SizedBox (height: MediaQuery.of(context).size.height * 0.03),
                 ],
               ),
               Row(
@@ -66,62 +66,53 @@ class Signup extends StatelessWidget {
                     height: MediaQuery.of(context).size.height * 0.80,
                     padding: const EdgeInsets.all(12),
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        SizedBox(
-                            height: MediaQuery.of(context).size.height * 0.03),
+                       
                         Txtfield(
                           controller: signupController.username,
                           obscureText: false,
                           labelText: 'userph'.tr,
                         ),
-                        SizedBox(
-                            height: MediaQuery.of(context).size.height * 0.03),
+                       
                         Txtfield(
                           controller: signupController.name,
                           obscureText: false,
                           labelText: 'nameph'.tr,
                         ),
-                        SizedBox(
-                            height: MediaQuery.of(context).size.height * 0.03),
+                       
                         Txtfield(
                           controller: signupController.email,
                           obscureText: false,
                           labelText: 'emailph'.tr,
                         ),
-                        SizedBox(
-                            height: MediaQuery.of(context).size.height * 0.03),
+                       
                         Txtfield(
                           controller: signupController.telNum,
                           obscureText: false,
                           labelText: 'phone number'.tr,
                         ),
-                        SizedBox(
-                            height: MediaQuery.of(context).size.height * 0.03),
+                       
                         Txtfield(
                           controller: signupController.idNum,
                           obscureText: false,
                           labelText: 'idph'.tr,
                         ),
-                        SizedBox(
-                            height: MediaQuery.of(context).size.height * 0.03),
+                       
                         Txtfield(
                           controller: signupController.pass,
                           obscureText: true,
                           labelText: 'pwph'.tr,
                         ),
-                        SizedBox(
-                            height: MediaQuery.of(context).size.height * 0.03),
+                       
                         Txtfield(
                           controller: signupController.confPass,
                           obscureText: true,
                           labelText: 'pw2ph'.tr,
                         ),
-                        SizedBox(
-                            height: MediaQuery.of(context).size.height * 0.03),
-                        SizedBox(
-                          height: MediaQuery.of(context).size.height * 0.05,
-                          width: MediaQuery.of(context).size.width * 0.4,
-                          child: ElevatedButton(
+                       
+                                               
+                     ElevatedButton(
                               style: ElevatedButton.styleFrom(
                                   backgroundColor: Colors.blue.shade800),
                               onPressed: () {
@@ -160,7 +151,7 @@ class Signup extends StatelessWidget {
                                     fontSize: 17,
                                     color: Colors.white),
                               )),
-                        )
+                    
                       ],
                     ),
                   )

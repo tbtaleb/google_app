@@ -25,14 +25,15 @@ class Fpage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                  width: 100,
-                  height: 100,
-                  decoration: const BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage('assets/images/book.png')))),
-              SizedBox(
-                height: MediaQuery.of(context).size.height * 0.1,
+                width: 100,
+                height: 100,
+                decoration: const BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage('assets/images/book.png'),
+                  ),
+                ),
               ),
+            
               Text(
                 'title1'.tr,
                 textAlign: TextAlign.center,
@@ -53,9 +54,7 @@ class Fpage extends StatelessWidget {
                   fontSize: 57,
                 ),
               ),
-              SizedBox(
-                height: MediaQuery.of(context).size.height * 0.1,
-              ),
+         
               Text(
                 'signup phrase'.tr,
                 style: TextStyle(
@@ -65,13 +64,9 @@ class Fpage extends StatelessWidget {
                   fontSize: 10,
                 ),
               ),
-              SizedBox(
-                height: MediaQuery.of(context).size.height * 0.03,
-              ),
-              SizedBox(
-                width: MediaQuery.of(context).size.width * 0.33,
-                height: MediaQuery.of(context).size.height * 0.05,
-                child: ElevatedButton(
+            
+            
+                ElevatedButton(
                     onPressed: (() {
                       Get.to(() => Signup());
                     }),
@@ -79,8 +74,7 @@ class Fpage extends StatelessWidget {
                       'signup'.tr,
                       style: TextStyle(fontSize: 25, fontFamily: 'Nexa'),
                     )),
-              ),
-              SizedBox(height: MediaQuery.of(context).size.height * 0.03),
+          
               Text(
                 'or'.tr,
                 style: TextStyle(
@@ -89,13 +83,9 @@ class Fpage extends StatelessWidget {
                   fontSize: 10,
                 ),
               ),
-              SizedBox(
-                height: MediaQuery.of(context).size.height * 0.03,
-              ),
-              SizedBox(
-                width: MediaQuery.of(context).size.width * 0.36,
-                height: MediaQuery.of(context).size.height * 0.05,
-                child: ElevatedButton(
+       
+           
+            ElevatedButton(
                     style: ElevatedButton.styleFrom(
                         shadowColor: Colors.transparent,
                         backgroundColor: Colors.transparent,
@@ -107,9 +97,8 @@ class Fpage extends StatelessWidget {
                       'log in'.tr,
                       style: TextStyle(
                           color: Colors.blue, fontSize: 25, fontFamily: 'Nexa'),
-                    )),
-              ),
-              SizedBox(height: MediaQuery.of(context).size.height * 0.03),
+                    ),),
+             
               Text(
                 'log in phrase'.tr,
                 style: TextStyle(
